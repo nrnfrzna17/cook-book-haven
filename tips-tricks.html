@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBook Haven - Tips & Tricks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        main {
+            flex: 1;
+        }
+        .navbar {
+            background-color: #18392B;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .tips-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .tips-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #18392B;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to right, #2B4E31, #49724B, #74966F);
+        }
+        @media (max-width: 768px) {
+            .tips-card img {
+                height: auto;
+            }
+            .row > div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">CookBook Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipe-management.html">Recipes Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipe-details.html">Recipe Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips-tricks.html">Tips & Tricks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main>
+    <!-- Tips & Tricks Section -->
+    <div class="container">
+        <h1 class="text-center" style="font-weight: bold;">Cooking Tips & Tricks</h1>
+        <div class="row mt-4">
+            <div class="col-md-6 col-sm-12">
+                <div class="card tips-card">
+                    <img src="css/knifeskills.jpg" class="card-img-top" alt="Knife Skills">
+                    <div class="card-body">
+                        <h5 class="card-title">Knife Skills</h5>
+                        <p class="card-text">Learn how to chop, dice, and mince like a pro. Proper knife skills save time and improve your cooking precision.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card tips-card">
+                    <img src="css/seasoningbasics.jpg" class="card-img-top" alt="Seasoning Basics">
+                    <div class="card-body">
+                        <h5 class="card-title">Seasoning Basics</h5>
+                        <p class="card-text">Understanding salt, acid, fat, and heat can elevate the flavors in your dishes. Experiment with balance to find the perfect taste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 col-sm-12">
+                <div class="card tips-card">
+                    <img src="css/mealprep.jpg" class="card-img-top" alt="Meal Prep">
+                    <div class="card-body">
+                        <h5 class="card-title">Meal Prep</h5>
+                        <p class="card-text">Save time during the week by prepping ingredients or complete meals in advance. Stay organized with labeled containers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="card tips-card">
+                    <img src="css/storingherbs.jpg" class="card-img-top" alt="Storing Herbs">
+                    <div class="card-body">
+                        <h5 class="card-title">Storing Herbs</h5>
+                        <p class="card-text">Keep fresh herbs vibrant longer by wrapping them in a damp paper towel and storing them in a resealable bag in the fridge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2025 CookBook Haven. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
